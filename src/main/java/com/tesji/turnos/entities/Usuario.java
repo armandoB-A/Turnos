@@ -21,7 +21,7 @@ public class Usuario {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "idCaja", nullable = false)
     private Caja idCaja;
 

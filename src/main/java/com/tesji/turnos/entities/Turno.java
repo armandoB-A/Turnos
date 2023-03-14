@@ -24,5 +24,4 @@ public class Turno {
 
     @Column(name = "fechaRegistro", nullable = false)
     private Instant fechaRegistro;
-
 }

@@ -17,8 +17,8 @@ public class TurnoController {
     private TurnoService turnoService;
 
     @PostMapping()
-    public ResponseEntity<Turno> addItem(@RequestBody Turno turno) {
-        return new ResponseEntity<>(turnoService.add(turno), HttpStatus.OK);
+    public ResponseEntity<Turno> addItem() {
+        return new ResponseEntity<>(turnoService.add(), HttpStatus.OK);
     }
     @GetMapping()
     public ResponseEntity<List<Turno>> getAllTurnos() {
